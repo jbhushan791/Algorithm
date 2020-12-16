@@ -6,7 +6,7 @@ import java.util.Queue;
 /**
  * @author jbhushan
  */
-public class LowestCommonAncestor {
+public class LowestCommonAncestorBST {
 
     public static void main(String[] args){
 
@@ -23,6 +23,9 @@ public class LowestCommonAncestor {
         TreeNode ancestor = lowestCommonAncestor(treeNode1, 13, 9);
         System.out.println();
         System.out.println("Common Ancestor: " +ancestor.val);
+
+        TreeNode i = iterativeVersion(treeNode1, 13, 9);
+        System.out.println("Common Ancestor: " +i.val);
     }
 
     private static TreeNode lowestCommonAncestor(TreeNode t1, int p, int q){
@@ -36,6 +39,18 @@ public class LowestCommonAncestor {
             return lowestCommonAncestor(t1.left, p, q);
         }
         return t1;
+    }
 
+    private static TreeNode iterativeVersion(TreeNode t1, int p, int q){
+        while (t1!=null){
+            if( p > t1.val && q > t1.val) {
+                t1 = t1.right;
+            } else if( p < t1.val && q < t1.val) {
+                t1 = t1.left;
+            }else{
+                break;
+            }
+        }
+        return t1;
     }
 }
