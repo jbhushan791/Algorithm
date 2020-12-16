@@ -15,22 +15,19 @@ public class LevelOrderTraversal {
         treeNode1.right = new TreeNode(3);
         treeNode1.left.right =  new TreeNode(12);
         treeNode1.right.left =  new TreeNode(2);
-
-        System.out.println(treeNode1.val+" "+treeNode1.left.val+" "
-                +treeNode1.right.val+" "+treeNode1.left.right.val+" "+treeNode1.right.left.val);
         levelOrderTraversal(treeNode1);
 //        System.out.println(treeNode1.val+" "+treeNode1.left.val+" "
 //                +treeNode1.right.val+" "+treeNode1.left.right.val+" "+treeNode1.right.left.val);
     }
 
-    private static void levelOrderTraversal(TreeNode t1){
+    public static void levelOrderTraversal(TreeNode t1){
         if( t1 != null){
             Queue<TreeNode> queue = new LinkedList<TreeNode>();
             queue.add(t1);
             TreeNode temp;
             while(!queue.isEmpty()){
                 temp = queue.poll();
-                System.out.println(" "+temp.val);
+                System.out.print(" "+temp.val);
                 if(temp.left !=null){
                     queue.add(temp.left);
                 }
