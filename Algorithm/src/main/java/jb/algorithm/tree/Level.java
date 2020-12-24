@@ -3,7 +3,7 @@ package jb.algorithm.tree;
 /**
  * This class is responsible for determining level of any given key in binary tree
  * Time complexity is O(n)
- * Space Complexity is O(h)
+ * Space Complexity is O(h) : Balance tree then log(n)
  *
  * @author jbhushan
  */
