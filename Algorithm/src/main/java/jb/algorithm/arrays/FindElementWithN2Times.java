@@ -40,6 +40,7 @@ public class FindElementWithN2Times {
             }
             if(count == 0){
                 voter = arr[i];
+                count=1;
             }
         }
         int c = 0;

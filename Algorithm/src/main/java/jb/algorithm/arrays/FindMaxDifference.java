@@ -13,6 +13,9 @@ public class FindMaxDifference {
 
         num = efficient(arr);
         System.out.println(num);
+
+        num = findMaxDiff(arr);
+        System.out.println(num);
     }
 
     public static int findMaxDifference(int[] arr) {
@@ -44,4 +47,21 @@ public class FindMaxDifference {
         return maxDiff;
     }
 
+    public static int findMaxDiff(int[] arr){
+        int minNumSoFar = arr[0];
+        int maxDiffSoFar = arr[1]-arr[0];
+        int currentDiff = arr[1]-arr[0];
+
+        for(int i =1; i< arr.length; i++){
+            if(arr[i] < minNumSoFar){
+                minNumSoFar = arr[i];
+            } else {
+                currentDiff = arr[i] - minNumSoFar;
+                if(currentDiff > maxDiffSoFar){
+                    maxDiffSoFar = currentDiff;
+                }
+            }
+        }
+        return maxDiffSoFar;
+    }
 }
