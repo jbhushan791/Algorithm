@@ -47,6 +47,24 @@ public class FindMaxDifference {
         return maxDiff;
     }
 
+    public static int difference(int[] arr) {
+
+        int[] diffArray = new int[arr.length-1];
+        for(int i=0; i<arr.length-1; i++){
+            diffArray[i] = arr[i+1]-arr[i];
+        }
+
+        int maxDiff = diffArray[0];
+        int diff = arr[1]-arr[0];
+        for(int i=1; i<arr.length-1; i++){
+            if(diffArray[i-1] > 0){
+                diffArray[i] = diffArray[i]+ diffArray[i-1];
+            }
+            maxDiff = Math.max(maxDiff, diffArray[i]);
+        }
+        return maxDiff;
+    }
+
     public static int findMaxDiff(int[] arr){
         int minNumSoFar = arr[0];
         int maxDiffSoFar = arr[1]-arr[0];

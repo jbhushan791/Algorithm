@@ -9,7 +9,7 @@ import java.util.LinkedList;
 public class FindMaxMultipleOf3 {
 
     public static void main(String[] args){
-        int[] arr = {3,9,1,6};
+        int[] arr = {3,9,6};
 
         int num = findMaxMultipleOf3(arr);
         System.out.println(num);
@@ -81,6 +81,7 @@ public class FindMaxMultipleOf3 {
             temp[i] = l2.get(i);
         }
 
+        //Sort in descending order
         Arrays.sort(temp);
         StringBuilder str = new StringBuilder(temp.length);
         for(int n : temp){
