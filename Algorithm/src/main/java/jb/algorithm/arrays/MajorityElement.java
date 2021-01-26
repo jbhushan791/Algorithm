@@ -22,6 +22,47 @@ public class MajorityElement {
         System.out.println(isMajority);
         System.out.println(st-s);
 
+        int[] n = {1,15,9,1,11,1,1,51,1,11,9,1,1,1};
+        findMajority(n);
+
+        int[] n2 = {1,15,9,1,11,12,13,51,1,11,9,1,1,1};
+        findMajority(n2);
+
+    }
+
+    /***
+     * find majoriy element using moores
+     * @param nums
+     * @return
+     */
+    public static int findMajority(int[] nums){
+        int majority = nums[0];
+        int count = 1;
+        for(int i =1; i< nums.length; i++){
+            if(nums[i] == majority){
+                count++;
+            }  else if(count == 0){
+                count++;
+                majority = nums[i];
+            }else{
+                count--;
+            }
+        }
+
+        count=0;
+        for(int n : nums){
+            if(n == majority){
+                count++;
+            }
+        }
+
+        if(count > nums.length/2){
+            System.out.println("Majority: "+majority);
+                return majority;
+        }
+
+        System.out.println("Majority: -1");
+        return -1;
     }
 
     public static boolean isMajority(int[] arr, int target) {

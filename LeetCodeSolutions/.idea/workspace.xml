@@ -22,7 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f14d8df0-07a7-4bc4-b3fa-8b7956db97b1" name="Default Changelist" comment="" />
+    <list default="true" id="f14d8df0-07a7-4bc4-b3fa-8b7956db97b1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Algorithm/src/main/java/jb/algorithm/linkedlist/GreatestValueRight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Algorithm/src/main/java/jb/algorithm/linkedlist/MergeTwoSortedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Algorithm/src/main/java/jb/algorithm/linkedlist/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,6 +81,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="421" y="100" key="FileChooserDialogImpl" timestamp="1609215145966">
