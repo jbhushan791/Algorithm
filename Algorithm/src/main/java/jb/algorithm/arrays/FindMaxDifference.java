@@ -30,6 +30,11 @@ public class FindMaxDifference {
         return maxDifference;
     }
 
+    /**
+     * Difference array solutionr
+     * @param arr
+     * @return
+     */
     public static int efficient(int[] arr) {
 
         int[] diffArray = new int[arr.length-1];
