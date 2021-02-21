@@ -31,7 +31,6 @@ public class Knapsack01 {
                 t[i][j] = -1;
             }
         }
-       // Arrays.fill(t,-1);
 
         return recursive(wt,val,k,wt.length,t);
     }
@@ -48,7 +47,6 @@ public class Knapsack01 {
                 t[size][k] = recursive(wt, val, k, size - 1, t);
             }
         }
-
         return t[size][k];
     }
 }
