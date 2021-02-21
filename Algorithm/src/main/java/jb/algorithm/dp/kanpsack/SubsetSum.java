@@ -1,4 +1,4 @@
-package jb.algorithm.dp;
+package jb.algorithm.dp.kanpsack;
 
 /**
  * @author jbhushan
@@ -8,7 +8,7 @@ public class SubsetSum {
     public static void main(String[] args){
 
         int[] arr = {1,8,4,6,9};
-        subsetExists(arr, 5);
+        subsetExists(arr, 25);
 
     }
 
@@ -28,15 +28,15 @@ public class SubsetSum {
         }
 
         for(int i=1; i<arr.length+1; i++) {
-            for (int j = 1; j < k; j++) {
+            for (int j = 1; j < k+1; j++) {
                 if(arr[i-1] <= j){
-                    t[i][j] = t[i][j-arr[i-1]] || t[i-1][j];
+                    t[i][j] = t[i-1][j-arr[i-1]] || t[i-1][j];
                 } else {
                     t[i][j] = t[i-1][j];
                 }
             }
         }
-        System.out.println(" SUbset Exists: "+t[arr.length][k]);
+        System.out.println(" Subset Exists: "+t[arr.length][k]);
         return t[arr.length][k];
     }
 
