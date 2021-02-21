@@ -1,6 +1,4 @@
-package jb.algorithm.dp.kanpsack;
-
-import java.util.Arrays;
+package jb.algorithm.dp.knapsack;
 
 /**
  * @author jbhushan

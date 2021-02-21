@@ -1,4 +1,4 @@
-package jb.algorithm.dp.kanpsack;
+package jb.algorithm.dp.knapsack;
 
 /**
  * @author jbhushan
