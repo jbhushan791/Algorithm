@@ -40,11 +40,11 @@ public class LeftRotateUsingGcd {
        }
     }
 
-   private static int gcd(int n, int k){
+   private static int gcd(int length, int k){
         if(k ==0){
-            return n;
+            return length;
         } else {
-            return gcd(k, n%k);
+            return gcd(k, length%k);
         }
    }
 

@@ -23,10 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f14d8df0-07a7-4bc4-b3fa-8b7956db97b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Algorithm/src/main/java/jb/algorithm/linkedlist/GreatestValueRight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Algorithm/src/main/java/jb/algorithm/linkedlist/MergeTwoSortedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Algorithm/src/main/java/jb/algorithm/linkedlist/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Algorithm/src/main/java/jb/algorithm/Practice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Algorithm/src/main/java/jb/algorithm/arrays/rotate/LeftRotateUsingGcd.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Algorithm/src/main/java/jb/algorithm/arrays/rotate/LeftRotateUsingGcd.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
