@@ -1,20 +1,18 @@
-package jb.algorithm.dp.knapsack;
+package jb.algorithm.dp.knapsack.zerone;
 
 /**
- * Assign signs such that two subset difference is given difference
- *
  * @author jbhushan
  */
-public class TargetSum {
+public class SubsetSumDifferenceCount {
 
     public static void main(String[] args){
 
         int[] arr = {1,1,2,3};
-        targetSum(arr,1);
+        minSubsetSumDiff(arr,1);
 
     }
 
-    public static int targetSum(int[] arr, int diff){
+    public static int minSubsetSumDiff(int[] arr, int diff){
         int sum =0;
         for(int a: arr){
             sum+=a;

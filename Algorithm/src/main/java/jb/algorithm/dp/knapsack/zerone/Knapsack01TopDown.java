@@ -1,4 +1,4 @@
-package jb.algorithm.dp.knapsack;
+package jb.algorithm.dp.knapsack.zerone;
 
 /**
  * @author jbhushan
